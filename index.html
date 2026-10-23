@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#542714" />
+  
+  <!-- SEO & Social Sharing -->
+  <title>Sansa Bakes | Handcrafted Gourmet Brownies</title>
+  <meta name="description" content="Artisanal homemade brownies baked in small batches with pure butter and rich couverture chocolate. Explore classic fudge, double chocolate, almond, and walnut brownie boxes." />
+  <meta property="og:title" content="Sansa Bakes — Homemade Brownies Made With Love" />
+  <meta property="og:description" content="Rich, fudgy chocolate brownies made in small batches. Order freshly baked treats directly via WhatsApp." />
+  <meta property="og:image" content="assets/images/hero-brownies.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon & Social Image -->
+  <link rel="icon" type="image/png" href="assets/images/sansa-logo.png" />
+  <link rel="apple-touch-icon" href="assets/images/sansa-logo.png" />
+  <link rel="alternate icon" href="favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Pacifico&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement">
+    <span>Baked fresh with Belgian couverture cocoa <span class="heart-pulse">♥</span> Free handwritten gift cards on gift orders!</span>
+  </aside>
+
+  <!-- Sticky Glassmorphic Header -->
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Sansa Bakes Home">
+      <img src="assets/images/sansa-logo.png" alt="Sansa Bakes Logo" class="brand-logo-img" />
+      <div class="brand-text-col">
+        <span class="brand-name">Sansa Bakes</span>
+        <span class="brand-tag">HOMEMADE BROWNIES</span>
+      </div>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#menu">Our Brownies</a>
+      <a href="#promise">Why Us</a>
+      <a href="#story">Our Story</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faqs">FAQs</a>
+      <a href="#contact">Contact</a>
+      <button class="cart-button" id="openCart" aria-label="View shopping bag">
+        <span>Bag</span>
+        <span class="cart-badge" id="cartCount">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="eyebrow-sparkle">✦</span> ARTISANAL SMALL-BATCH BAKERY
+        </p>
+        <h1>Good things<br>are <em>homemade.</em></h1>
+        <p class="hero-description">
+          Ultra-rich, decadent chocolate brownies baked fresh with pure butter and real Belgian chocolate. Made to turn ordinary days into comforting celebrations.
+        </p>
+        
+        <div class="hero-actions">
+          <a class="button button-dark" href="#menu">Explore Menu <span>↗</span></a>
+          <a class="text-link" href="#story">Our baking story <span>→</span></a>
+        </div>
+
+        <div class="hero-trust">
+          <div class="trust-avatar-group">
+            <span>🍫</span>
+            <span>✨</span>
+            <span>♥</span>
+          </div>
+          <div class="trust-text">
+            <span class="trust-stars">★★★★★</span> <strong>4.9 / 5 Rating</strong>
+            Over 350+ happy brownie lovers served
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="sticker-craft badge-floating">
+          <img src="assets/images/sansa-logo.png" alt="Sansa Bakes Seal" class="sticker-logo-img" />
+        </div>
+        <div class="hero-image-wrap">
+          <img src="assets/images/hero-brownies.jpg" alt="Stack of rich artisanal chocolate brownies" />
+        </div>
+        <div class="badge-fudgy badge-floating">
+          <span class="badge-fudgy-icon">🍫</span>
+          <div class="badge-fudgy-content">
+            <strong>100% Eggless</strong>
+            <small>Molten, Fudgy Texture</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section section-wrap" id="menu">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-sparkle">✳</span> THE GOOD STUFF</p>
+          <h2>Crafted for your <em>cravings.</em></h2>
+        </div>
+        <p>Pick your favourite flavour and size. We bake each batch fresh with high-grade couverture chocolate.</p>
+      </div>
+
+      <!-- Controls: Sizing Switcher & Category Filters -->
+      <div class="menu-controls-bar">
+        <div class="size-switcher" role="group" aria-label="Select brownie portion size">
+          <button class="size-tab active" data-size="piece">
+            Per piece
+            <span>₹60 onwards</span>
+          </button>
+          <button class="size-tab" data-size="tray">
+            Whole tray (1 kg)
+            <span>₹999 onwards</span>
+          </button>
+        </div>
+
+        <div class="filter-pills" role="group" aria-label="Filter by dietary or flavour profile">
+          <button class="filter-btn active" data-filter="all">All Flavours</button>
+          <button class="filter-btn" data-filter="eggless">🌱 100% Eggless</button>
+          <button class="filter-btn" data-filter="rich">🍫 Extra Rich</button>
+          <button class="filter-btn" data-filter="nutty">🥜 Nutty & Crunchy</button>
+        </div>
+      </div>
+
+      <!-- Product Dynamic Grid -->
+      <div class="product-grid" id="productGrid">
+        <!-- Rendered by script.js -->
+      </div>
+    </section>
+
+    <!-- Why Sansa Bakes (The Promise) -->
+    <section class="promise-section" id="promise">
+      <div class="section-wrap">
+        <div class="promise-grid">
+          <div class="promise-card">
+            <div class="promise-icon-wrap">🌱</div>
+            <h3>100% Vegetarian</h3>
+            <p>Completely eggless without sacrificing that rich, fudgy, melt-in-your-mouth texture.</p>
+          </div>
+          <div class="promise-card">
+            <div class="promise-icon-wrap">🍫</div>
+            <h3>Couverture Cocoa</h3>
+            <p>Made with premium cocoa butter and Belgian chocolate — zero compound substitutes.</p>
+          </div>
+          <div class="promise-card">
+            <div class="promise-icon-wrap">✨</div>
+            <h3>Baked Fresh to Order</h3>
+            <p>We never sell cold storage stock. Every single brownie is baked specifically for your order.</p>
+          </div>
+          <div class="promise-card">
+            <div class="promise-icon-wrap">🎁</div>
+            <h3>Gift-Ready Boxes</h3>
+            <p>Beautiful kraft packaging tied with rustic twine and includes your handwritten message card.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section section-wrap" id="story">
+      <div class="story-grid">
+        <div class="story-image-wrap">
+          <img src="assets/images/story-brownies.jpg" alt="Artisan gift box of assorted brownies" loading="lazy" />
+          <div class="story-stamp">small batches<br><b>big love ♡</b></div>
+        </div>
+        <div class="story-content">
+          <p class="eyebrow"><span class="eyebrow-sparkle">✦</span> A BAKERY WITH A BIG HEART</p>
+          <h2>Sweet moments start <em>here.</em></h2>
+          <p>
+            Sansa Bakes was born from a simple kitchen obsession: perfecting the ultimate chocolate brownie. One that is unapologetically rich, naturally fudgy, and brings genuine smiles to the table.
+          </p>
+          <p>
+            Whether it’s a quick afternoon pick-me-up, a party tray for colleagues, or an intimate birthday surprise, we pour warmth and artisanal care into every bake.
+          </p>
+          <div class="story-quote">
+            “We believe the world becomes a little kinder when you share a warm brownie.”
+          </div>
+          <a class="button button-dark" href="#menu">Find your sweet treat <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews / Testimonials -->
+    <section class="reviews-section" id="reviews">
+      <div class="section-wrap">
+        <div class="section-header" style="text-align: center; justify-content: center; margin-bottom: 10px;">
+          <div>
+            <p class="eyebrow" style="justify-content: center;"><span class="eyebrow-sparkle">★</span> REAL CUSTOMER LOVE</p>
+            <h2>What brownie lovers are <em>saying.</em></h2>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">“Hands down the best fudge brownies I’ve ever tasted in the city! The texture is so chewy and rich without being overly sweet. My whole family finished the tray in one evening!”</p>
+            <div class="review-author">
+              <div class="author-badge">P</div>
+              <div class="author-info">
+                <strong>Pooja Sharma</strong>
+                <small>Ordered 1 kg Classic Fudge Tray</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">“Ordered the Roasted Almond brownie box for my best friend’s birthday. The packaging was so aesthetic and the handwritten note made it extra special. Highly recommend warming it for 15s!”</p>
+            <div class="review-author">
+              <div class="author-badge">A</div>
+              <div class="author-info">
+                <strong>Ananya Iyer</strong>
+                <small>Gift Box with Personalized Card</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">“It’s really hard to find 100% eggless brownies that retain this level of fudginess. The Triple Chocolate is pure heaven. Prompt delivery via WhatsApp too.”</p>
+            <div class="review-author">
+              <div class="author-badge">R</div>
+              <div class="author-info">
+                <strong>Rahul Verma</strong>
+                <small>Repeat Customer</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="faq-section section-wrap" id="faqs">
+      <div class="section-header" style="text-align: center; justify-content: center; margin-bottom: 20px;">
+        <div>
+          <p class="eyebrow" style="justify-content: center;"><span class="eyebrow-sparkle">?</span> GOT QUESTIONS?</p>
+          <h2>Frequently asked <em>questions.</em></h2>
+        </div>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>How long do your brownies stay fresh?</span>
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            Our brownies stay freshly moist for <strong>5–6 days at room temperature</strong> in an airtight container, up to <strong>12–14 days refrigerated</strong>, or up to <strong>1 month frozen</strong>.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What is the best way to reheat and serve them?</span>
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            Microwave a piece for <strong>12 to 15 seconds</strong> for a gooey, molten centre! If you prefer a crisp outer crust, warm it in an oven or toaster oven at 160°C for 2–3 minutes. Serving with a scoop of vanilla bean ice cream is highly recommended!
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Are all your brownies 100% vegetarian / eggless?</span>
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            Yes! All our brownies are crafted with a 100% eggless recipe. We use premium dairy butter and high-quality chocolate to ensure the exact fudgy chewiness you crave.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How far in advance should I place an order?</span>
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            Because we bake in small batches fresh for each order, we recommend ordering <strong>24 hours in advance</strong>. Same-day orders depend on kitchen availability — shoot us a quick WhatsApp to check!
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I customize a gift box with a personal card?</span>
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            Absolutely! In the checkout screen, check the "🎁 Is this a gift?" option and type your custom message. We will handwrite your note on an artisan card and package the box with satin twine at no extra charge.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Banner CTA -->
+    <section class="order-banner section-wrap">
+      <div class="order-banner-content">
+        <p class="eyebrow" style="color: var(--caramel-pale);"><span class="eyebrow-sparkle">✦</span> FRESH BATCH BAKING DAILY</p>
+        <h2>Life is better with a brownie in hand.</h2>
+        <p>Craving a warm slice or planning a celebratory dessert table? Let’s make it sweet.</p>
+      </div>
+      <a href="#menu" class="button button-light">Pick Your Brownies <span>♡</span></a>
+      <span class="order-banner-pattern">✳</span>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-wrap" id="contact">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow"><span class="eyebrow-sparkle">✉</span> WE’D LOVE TO HEAR FROM YOU</p>
+          <h2>Say <em>hello!</em></h2>
+          <p>
+            Have a question about allergens, custom catering trays, or same-day pickup? Drop us a message on WhatsApp or email, and we’ll get back to you promptly.
+          </p>
+          <button class="button button-dark" id="contactOrder">Order via WhatsApp <span>↗</span></button>
+        </div>
+
+        <div class="contact-cards-stack">
+          <div class="contact-card-item">
+            <div class="contact-icon">☏</div>
+            <div class="contact-detail">
+              <small>WhatsApp Orders</small>
+              <strong>+91 98765 43210</strong>
+            </div>
+          </div>
+
+          <div class="contact-card-item">
+            <div class="contact-icon">✉</div>
+            <div class="contact-detail">
+              <small>Email Inquiries</small>
+              <strong>hello@sansabakes.com</strong>
+            </div>
+          </div>
+
+          <div class="contact-card-item">
+            <div class="contact-icon">☼</div>
+            <div class="contact-detail">
+              <small>Baking Hours</small>
+              <strong>10:00 AM – 9:00 PM (Daily)</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <img src="assets/images/sansa-logo.png" alt="Sansa Bakes Logo" class="footer-logo-img" />
+    <a class="footer-brand" href="#home">Sansa Bakes</a>
+    <p class="footer-tagline">“Rich • Fudgy • Delicious” — Handcrafted with love & lots of chocolate.</p>
+    <div class="footer-nav">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#story">Our Story</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faqs">FAQs</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Sansa Bakes. All rights reserved.</p>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <a class="floating-whatsapp" href="https://wa.me/919876543210?text=Hello%20Sansa%20Bakes!%20I%20have%20an%20inquiry%20about%20your%20brownies." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <span>💬</span>
+  </a>
+
+  <!-- Cart Drawer -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <img src="assets/images/sansa-logo.png" alt="Sansa Bakes Logo" class="drawer-logo-badge" />
+        <div>
+          <p class="eyebrow" style="margin-bottom: 2px;"><span class="eyebrow-sparkle">♥</span> YOUR PICKS</p>
+          <h2>Your Bag <span id="drawerCount">(0)</span></h2>
+        </div>
+      </div>
+      <button class="icon-btn-close" id="closeCart" aria-label="Close bag">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-empty" id="cartEmpty">
+      <div class="cart-empty-icon">♡</div>
+      <h3>Your bag is looking sweet… and empty.</h3>
+      <p>Add a warm brownie slice or a celebration tray to get started.</p>
+      <button class="button button-outline" id="continueShopping">Explore Brownies</button>
+    </div>
+
+    <div class="cart-summary" id="cartSummary">
+      <div class="summary-row">
+        <span>Order Subtotal</span>
+        <span id="cartSubtotal">₹0</span>
+      </div>
+      <p class="summary-note">Delivery charges, if applicable, will be confirmed on WhatsApp.</p>
+      <button class="button button-dark" style="width: 100%;" id="checkoutButton">Proceed to WhatsApp Order ↗</button>
+    </div>
+  </aside>
+
+  <!-- Checkout Details Dialog -->
+  <dialog class="modal-dialog" id="checkoutDialog">
+    <div class="modal-content">
+      <div class="drawer-header" style="margin-bottom: 14px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <img src="assets/images/sansa-logo.png" alt="Sansa Bakes Logo" class="drawer-logo-badge" />
+          <div>
+            <p class="eyebrow" style="margin-bottom: 2px;"><span class="eyebrow-sparkle">✦</span> STEP 2 OF 2</p>
+            <h2>Order Details</h2>
+          </div>
+        </div>
+        <button class="icon-btn-close" id="closeCheckout" aria-label="Close order details">×</button>
+      </div>
+
+      <form class="modal-form" id="checkoutForm">
+        <label>
+          Your Full Name *
+          <input name="name" required autocomplete="name" placeholder="e.g. Priya Sharma" />
+        </label>
+
+        <label>
+          WhatsApp Contact Number *
+          <input name="phone" type="tel" required autocomplete="tel" pattern="[0-9+() -]{8,18}" placeholder="e.g. +91 98765 43210" />
+        </label>
+
+        <label>
+          Delivery Address *
+          <textarea name="address" required rows="3" placeholder="Apartment / house no., street, landmark, city & pincode"></textarea>
+        </label>
+
+        <!-- Gift Options -->
+        <div class="gift-toggle-box">
+          <label class="gift-toggle-label">
+            <input type="checkbox" id="isGiftCheckbox" name="isGift" />
+            <span>🎁 Is this a gift? Add a free handwritten card!</span>
+          </label>
+          <div class="gift-fields" id="giftFields">
+            <label style="margin-top: 10px;">
+              Recipient's Name
+              <input name="recipientName" placeholder="e.g. Ananya" />
+            </label>
+            <label>
+              Gift Message (Will be handwritten on an artisan card)
+              <textarea name="giftMessage" rows="2" placeholder="e.g. Happy Birthday Ananya! Wishing you lots of love and chocolate!"></textarea>
+            </label>
+          </div>
+        </div>
+
+        <label>
+          Special Notes or Delivery Instructions (Optional)
+          <textarea name="notes" rows="2" placeholder="e.g. Please deliver by 4 PM; less sweet, etc."></textarea>
+        </label>
+
+        <div class="summary-row" style="margin: 20px 0 14px; border-top: 1px solid var(--line-subtle); padding-top: 14px;">
+          <span>Order Subtotal</span>
+          <span id="checkoutSubtotal">₹0</span>
+        </div>
+
+        <p class="summary-note" style="margin-bottom: 16px;">
+          Clicking below formats your order and opens WhatsApp. Your order is confirmed when the bakery replies!
+        </p>
+
+        <button type="submit" class="button button-dark" style="width: 100%;">
+          Continue to WhatsApp ↗
+        </button>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- Product Quick-View Modal -->
+  <dialog class="modal-dialog quick-view-dialog" id="quickViewDialog">
+    <div class="qv-header">
+      <img id="qvImage" src="" alt="" />
+      <button class="qv-close" id="qvCloseBtn" aria-label="Close details">×</button>
+    </div>
+    <div class="qv-body">
+      <div class="qv-title-row">
+        <h2 id="qvTitle" style="font-size: 1.5rem;">Brownie Name</h2>
+        <div class="price-wrap" style="text-align: right;">
+          <span class="price-val" id="qvPrice">₹0</span>
+          <span class="price-unit" id="qvUnit">per piece</span>
+        </div>
+      </div>
+
+      <div class="qv-badges" id="qvBadges"></div>
+      <p id="qvDesc" style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 20px;"></p>
+
+      <div class="qv-tabs">
+        <button class="qv-tab-btn active" data-tab="tabTaste">Tasting Notes</button>
+        <button class="qv-tab-btn" data-tab="tabIngredients">Ingredients & Allergens</button>
+        <button class="qv-tab-btn" data-tab="tabStorage">Reheat & Storage</button>
+      </div>
+
+      <div class="qv-tab-pane active" id="tabTaste">
+        <p id="qvTaste"></p>
+      </div>
+
+      <div class="qv-tab-pane" id="tabIngredients">
+        <p><strong>Ingredients:</strong> <span id="qvIngredients"></span></p>
+        <p style="margin-top: 8px;"><strong>Allergens:</strong> <span id="qvAllergens"></span></p>
+      </div>
+
+      <div class="qv-tab-pane" id="tabStorage">
+        <p><strong>Shelf Life:</strong> <span id="qvShelfLife"></span></p>
+        <p style="margin-top: 8px;"><strong>Reheating Tips:</strong> <span id="qvReheat"></span></p>
+      </div>
+
+      <div class="qv-footer">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <label for="qvSizeSelect" style="font-weight: 700; font-size: 0.85rem;">Size:</label>
+          <select id="qvSizeSelect" style="padding: 6px 10px; border-radius: 6px; border: 1px solid var(--line-strong);">
+            <option value="piece">Per piece</option>
+            <option value="tray">Whole tray (1 kg)</option>
+          </select>
+        </div>
+        <button class="button button-dark" id="qvAddBagBtn">Add to Bag <span>+</span></button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Interactive Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js?v=2"></script>
+</body>
+</html>
