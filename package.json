@@ -1,0 +1,19 @@
+{
+  "name": "sansa-bakes-website",
+  "version": "1.0.0",
+  "description": "Sansa Bakes — Handcrafted Gourmet Brownies storefront",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve -l 3000 .",
+    "start": "npx serve -l 3000 .",
+    "serve": "npx serve ."
+  },
+  "keywords": [
+    "bakery",
+    "brownies",
+    "storefront",
+    "sansa-bakes"
+  ],
+  "author": "Sansa Bakes",
+  "license": "ISC"
+}
